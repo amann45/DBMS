@@ -70,7 +70,7 @@ select bl.isbn from booklist as bl where bl.publication='o_publication' and b.bi
 
 
 
----------------------------lab 4 2025 dec 30----------------------------
+---------------------------lab 4 2026 jan 20----------------------------
 
 
 -- q1: sort the employee records in descending order
@@ -118,4 +118,5 @@ WHERE e.salary = (SELECT MAX(salary) FROM employee);
 
 -- q11: find the authors name who have written more than one books
 select author from bookid 
+
 group by author having count(bname)>=1;
