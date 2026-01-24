@@ -47,7 +47,7 @@ where bid=1;
 
 select * from issues;
 
--- q12 use sub query to  find the all teacher name and faculty whose date of employee is 1jan,2010
+-- q12 use sub query to  find the all teacher name and faculty whose date of employee is 1jan,2011
 
 update employee
 set dateofemployee='01-01-2011' where eid=1;
@@ -120,3 +120,4 @@ WHERE e.salary = (SELECT MAX(salary) FROM employee);
 select author from bookid 
 
 group by author having count(bname)>=1;
+
